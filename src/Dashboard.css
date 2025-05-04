@@ -1,0 +1,118 @@
+/* src/Dashboard.css */
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:orchid;/* Light background color */
+  }
+  
+  /* Header Styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50; /* Green background */
+    color: wheat;
+    padding: 10px 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  header nav {
+    display: flex;
+  }
+  
+  header button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    background-color: white; /* Button background */
+    color: #4CAF50; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  header button:hover {
+    background-color: #ddd; /* Button hover effect */
+  }
+  
+  /* Active Dealers Section */
+  .active-dealers {
+    margin-top: 20px;
+  }
+  
+  /* Table Styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: white; /* Table background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Table row separator */
+  }
+  
+  th {
+    background-color: #f2f2f2; /* Header background */
+  }
+  
+  /* Payment Info Styles */
+  .payment-info {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white; /* Payment info background */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  
+  /* Footer Styles */
+  footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50; /* Footer background */
+    color: whitesmoke;
+  }
+  
+  .tracking-info {
+    margin-top: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    header nav {
+        margin-top: 10px;
+    }
+  
+    table {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .order-list {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  }
