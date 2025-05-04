@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Header from "../components/Header";
 import Button from "../components/Button";
 import WeightChart from "../components/WeightChart";
@@ -9,14 +9,8 @@ import DailyWeightGainChart from "../components/DailyWeightGainChart";
 import PagesList from "../components/PagesList";
 
 function FarmerInformation() {
-  useEffect(() => {
-    const fetchShops =  async function(){
-       await axios.get("https://smart-agriculture-3.onrender.com/farmers",{withcredentials : true})
-    }
-    const response =  fetchShops()
-    setProducts(response.data.data)
-  }
-  )
+
+
   return (
     <div>
       <Header />

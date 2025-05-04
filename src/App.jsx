@@ -4,9 +4,7 @@ import Header from './components/Header'
 import { Outlet } from 'react-router-dom'
 import axios from 'axios'
 
-axios.defaults({
- credentials : true
-})
+
 
 
 function App() {
